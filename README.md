@@ -1,11 +1,11 @@
 # Adipocyte_segmentation_thesis
 Additional information about the custom model used for adipocyte segmentation, and files to use and improve the model.
 
-This folder holds the protocol, training images, custom model, and helpful QuPath scripts to automate the segmentation and assessment of adipocytes.
+This folder holds the protocol, custom model, and helpful QuPath scripts to automate the segmentation and assessment of adipocytes.
 
 You will need to install Cellpose and QuPath. QuPath is simple to install, but Cellpose is a bit trickier, there are some tutorials online that can help. See https://cellpose.readthedocs.io/en/latest/installation.html 
 
-You don't need the training images to run the custom model, but you do need the training images if you wish to train the model further. 
+If you want to improve on the model, you will need the training images. I didn't include them in this because of file size restrictions, but you can message me about those. You don't need the training images to run the custom model, but you do need the training images if you wish to train the model further. 
 
 The model works decently well but it still struggles with smaller cells and cells with not strictly defined boundaries. You can add more training images to improve the model's performance. Training images have to be fully segmented, so you can run a general model on the image, manually fix the segmentation, and add it to the training image directory. Adding training images won't change the current model, but you can train a new and improved model with the updated training images.
 
